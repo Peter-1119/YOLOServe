@@ -34,7 +34,7 @@ YOLOServe
 ## Installation Steps
 1. Clone the repository:
 ```
-git clone https://github.com/Peter-1119/YOLOServe .git
+git clone https://github.com/Peter-1119/YOLOServe.git
 cd YOLOServe 
 ```
 
