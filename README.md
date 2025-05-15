@@ -81,9 +81,6 @@ pip install torch==2.1.0+cu121 torchvision==0.12.0+cu121 torchaudio==0.12.0+cu12
 pip install opencv-python-headless==4.8.1.78
 ```
 
-    *   Or use a third-party precompiled OpenCV with CUDA.
-
-
 
 ## Model and Data Preparation
 * The pretrained YOLOv10 model (yolov10n.pt) should be placed in the model/ directory.
