@@ -31,7 +31,7 @@ YOLOServe
 ```
 
 
-##Installation
+## Installation Steps
 1. Clone the repository:
 ```
 git clone https://github.com/Peter-1119/YOLOServe .git
@@ -53,6 +53,35 @@ or:
 pip install -r requirements.txt
 pip install git+https://github.com/THU-MIG/yolov10.git
 ```
+
+
+# ⚡ Important: GPU Installation Notice
+If you intend to use GPU acceleration, you do not need to install the CPU versions of OpenCV and PyTorch listed in requirements.txt.
+For GPU-based installation:
+
+1. Uninstall the CPU versions of OpenCV and PyTorch:
+```
+pip uninstall opencv-python torch
+```
+
+2. Install the GPU versions:
+* CUDA 11.8:
+```
+pip install torch==2.1.0+cu118 torchvision==0.12.0+cu118 torchaudio==0.12.0+cu118 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+* CUDA 12.1:
+```
+pip install torch==2.1.0+cu121 torchvision==0.12.0+cu121 torchaudio==0.12.0+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+* OpenCV with CUDA:
+    *   It is recommended to build OpenCV with CUDA support manually or install a precompiled version such as:
+```
+pip install opencv-python-headless==4.8.1.78
+```
+    *   Or use a third-party precompiled OpenCV with CUDA.
+
 
 
 ## Model and Data Preparation
