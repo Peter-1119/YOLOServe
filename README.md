@@ -46,7 +46,7 @@ source env/bin/activate  # On Windows, use: .\env\Scripts\activate
 
 3. Install dependencies:
 ```
-run install
+run install.bat
 ```
 or: 
 ```
